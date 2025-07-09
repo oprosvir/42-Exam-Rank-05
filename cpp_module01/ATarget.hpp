@@ -6,7 +6,7 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 01:51:16 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 12:54:50 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/09 13:16:39 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define ATARGET_HPP
 
 #include <string>
+#include "ASpell.hpp"
 
 class ATarget {
 protected:
@@ -30,6 +31,8 @@ public:
     const std::string& getType() const;
     
     virtual ATarget* clone() const = 0;
+
+    void getHitBySpell(const ASpell& spell) const;
 };
 
 #endif

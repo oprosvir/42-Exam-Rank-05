@@ -6,7 +6,7 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 01:50:45 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 12:43:50 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/09 13:24:23 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,8 @@ const std::string& ASpell::getEffects() const {
     return this->effects;
 }
 
+void ASpell::launch(const ATarget& target) const {
+    // call the getHitBySpell of the passed object, passing the
+    // current instance as parameter
+    target.getHitBySpell(*this);
+}
