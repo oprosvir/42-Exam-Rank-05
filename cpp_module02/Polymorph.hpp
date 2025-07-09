@@ -6,11 +6,21 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 14:51:12 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 14:55:42 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/09 15:05:08 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef POLYMORPH_HPP
 #define POLYMORPH_HPP
+
+#include "ASpell.hpp"
+
+class Polymorph : public ASpell {
+public:
+    Polymorph();
+    virtual ~Polymorph();
+
+    virtual Polymorph* clone() const;
+};
 
 #endif
