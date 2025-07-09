@@ -6,7 +6,7 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 00:51:20 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 14:19:57 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/09 15:51:05 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,14 @@
 #include <map>
 #include "ASpell.hpp"
 #include "ATarget.hpp"
+#include "SpellBook.hpp"
 
 class Warlock {
 private:
     std::string name;
     std::string title;
-    std::map<std::string, ASpell*> spells;
+    // std::map<std::string, ASpell*> spells;
+    SpellBook book;
 
     Warlock();
     Warlock(const Warlock& other);
@@ -37,7 +39,6 @@ public:
     const std::string& getTitle() const;
 
     void setTitle(const std::string& newTitle);
-
     void introduce() const;
 
     void learnSpell(ASpell* spell);

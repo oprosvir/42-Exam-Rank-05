@@ -6,7 +6,7 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 01:54:37 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 15:13:48 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/09 16:10:21 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include "BrickWall.hpp"
 #include "Polymorph.hpp"
 #include "Fireball.hpp"
+#include "TargetGenerator.hpp"
 
 int main()
 {
@@ -38,4 +39,8 @@ int main()
   richard.introduce();
   richard.launchSpell("Polymorph", *wall);
   richard.launchSpell("Fireball", *wall);
+
+  delete polymorph;
+  delete fireball;
+  delete wall;
 }
