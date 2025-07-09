@@ -6,11 +6,13 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 01:54:37 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/08 01:55:05 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/09 14:29:34 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Warlock.hpp"
+#include "Dummy.hpp"
+#include "Fwoosh.hpp"
 
 int main()
 {
@@ -26,4 +28,6 @@ int main()
 
   richard.forgetSpell("Fwoosh");
   richard.launchSpell("Fwoosh", bob);
+  
+  delete fwoosh;
 }

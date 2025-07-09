@@ -6,7 +6,7 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 01:50:40 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 13:22:52 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/09 14:29:02 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 #include <string>
 #include "ATarget.hpp"
+
+class ATarget;
 
 class ASpell {
 protected:
