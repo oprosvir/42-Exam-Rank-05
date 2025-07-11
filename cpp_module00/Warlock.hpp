@@ -6,13 +6,11 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 00:51:20 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/08 01:11:30 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/11 13:25:01 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WARLOCK_HPP
-#define WARLOCK_HPP
-
+#pragma once
 #include <string>
 #include <iostream>
 
@@ -36,5 +34,3 @@ public:
 
     void introduce() const;
 };
-
-#endif

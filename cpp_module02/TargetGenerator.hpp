@@ -6,13 +6,11 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 14:52:18 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 16:04:03 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/11 13:33:27 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TARGETGENERATOR_HPP
-#define TARGETGENERATOR_HPP
-
+#pragma once
 #include <map>
 #include <string>
 #include "ATarget.hpp"
@@ -32,5 +30,3 @@ public:
     void forgetTargetType(const std::string& type);
     ATarget* createTarget(const std::string& type);
 };
-
-#endif

@@ -6,13 +6,11 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 00:51:20 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 15:51:05 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/11 13:33:36 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WARLOCK_HPP
-#define WARLOCK_HPP
-
+#pragma once
 #include <string>
 #include <iostream>
 #include <map>
@@ -45,5 +43,3 @@ public:
     void forgetSpell(const std::string& spell);
     void launchSpell(const std::string& spell, const ATarget& target);
 };
-
-#endif

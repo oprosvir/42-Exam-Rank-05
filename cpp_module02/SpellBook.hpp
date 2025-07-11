@@ -6,13 +6,11 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 14:51:59 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 15:32:44 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/11 13:33:20 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SPELLBOOK_HPP
-#define SPELLBOOK_HPP
-
+#pragma once
 #include <map>
 #include <string>
 #include "ASpell.hpp"
@@ -32,5 +30,3 @@ public:
     void forgetSpell(const std::string& spell);
     ASpell* createSpell(const std::string& spell);
 };
-
-#endif

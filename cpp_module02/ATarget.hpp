@@ -6,13 +6,11 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 01:51:16 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 14:28:36 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/11 13:26:14 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ATARGET_HPP
-#define ATARGET_HPP
-
+#pragma once
 #include <string>
 #include "ASpell.hpp"
 
@@ -37,4 +35,3 @@ public:
     void getHitBySpell(const ASpell& spell) const;
 };
 
-#endif

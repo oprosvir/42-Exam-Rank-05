@@ -6,7 +6,7 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 01:51:35 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 13:37:08 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/10 14:30:51 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ Fwoosh::Fwoosh() : ASpell("Fwoosh", "fwooshed") {}
 Fwoosh::~Fwoosh() {}
 
 // return a pointer to a new Fwoosh object
-Fwoosh* Fwoosh::clone() const {
+ASpell* Fwoosh::clone() const {
     return new Fwoosh;
 }

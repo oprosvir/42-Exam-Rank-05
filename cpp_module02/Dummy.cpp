@@ -6,7 +6,7 @@
 /*   By: oprosvir <oprosvir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 01:52:09 by oprosvir          #+#    #+#             */
-/*   Updated: 2025/07/09 13:44:16 by oprosvir         ###   ########.fr       */
+/*   Updated: 2025/07/11 13:29:57 by oprosvir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 Dummy::Dummy() : ATarget("Target Practice Dummy") {}
 Dummy::~Dummy() {}
 
-Dummy* Dummy::clone() const {
+ATarget* Dummy::clone() const {
     return new Dummy;
 }
